@@ -30,8 +30,9 @@ class ClienteController extends Controller
             }
             $data = json_decode($request->getRawBody(), true); // Receber os dados JSON
             // Verificar se os dados necessários foram recebidos
+            $transaction = Yii::$app->db->beginTransaction(); // Iniciar transação
             if (isset($data['nome'], $data['cpf'], $data['foto'], $data['sexo'], $data['endereco'])) {
-                $transaction = Yii::$app->db->beginTransaction(); // Iniciar transação
+                
                 $cliente = new Cliente();
                 $cliente->nome = $data['nome'];
                 $cliente->cpf = $data['cpf'];
