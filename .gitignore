@@ -36,4 +36,4 @@ tests/_support/_generated
 /.vagrant
 
 /runtime/debug
-/runtime/logs
+/runtime/logs/*
