@@ -1,0 +1,1012 @@
+2024-03-30 16:45:34 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] Connection timed out in /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/Connection.php:722
+Stack trace:
+#0 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/Connection.php(722): PDO->__construct()
+#1 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#3 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#5 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/Command.php(1181): yii\db\Command->prepare()
+#6 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/Command.php(417): yii\db\Command->queryInternal()
+#7 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/mysql/Schema.php(328): yii\db\Command->queryAll()
+#8 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/mysql/Schema.php(133): yii\db\mysql\Schema->findColumns()
+#9 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#10 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/Schema.php(192): yii\db\Schema->getTableMetadata()
+#11 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/controllers/MigrateController.php(369): yii\db\Schema->getTableSchema()
+#12 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(657): yii\console\controllers\MigrateController->getMigrationNameLimit()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionCreate()
+#14 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#15 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#16 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#17 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#18 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#19 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#20 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#21 /mnt/c/xampp/htdocs/projeto_coalize/yii(20): yii\base\Application->run()
+#22 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] Connection timed out in /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/Connection.php:648
+Stack trace:
+#0 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#1 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#3 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/Command.php(1181): yii\db\Command->prepare()
+#4 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/Command.php(417): yii\db\Command->queryInternal()
+#5 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/mysql/Schema.php(328): yii\db\Command->queryAll()
+#6 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/mysql/Schema.php(133): yii\db\mysql\Schema->findColumns()
+#7 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#8 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/Schema.php(192): yii\db\Schema->getTableMetadata()
+#9 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/controllers/MigrateController.php(369): yii\db\Schema->getTableSchema()
+#10 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(657): yii\console\controllers\MigrateController->getMigrationNameLimit()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionCreate()
+#12 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#13 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#14 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#15 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#16 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#17 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#18 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#19 /mnt/c/xampp/htdocs/projeto_coalize/yii(20): yii\base\Application->run()
+#20 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 2002
+    [2] => Connection timed out
+)
+
+2024-03-30 16:44:33 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    '\'WSL_INTEROP' => '/run/WSL/565_interop\''
+    '\'WSL_DISTRO_NAME' => 'Ubuntu-20.04\''
+    '\'WT_SESSION' => '34ae1d33-018f-4b0f-bf61-106fcd1762d3\''
+    '\'WT_PROFILE_ID' => '{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}\''
+    '\'WSLENV' => 'WT_SESSION:WT_PROFILE_ID:BASH_ENV/u\''
+    '\'PWD' => '/home/felipe\''
+    '\'TERM' => 'xterm-256color\''
+    '\'HOSTTYPE' => 'x86_64\''
+    'SHELL' => '/bin/bash'
+    'NVM_INC' => '/home/felipe/.nvm/versions/node/v16.12.0/include/node'
+    'SUDO_GID' => '1000'
+    'WSL_DISTRO_NAME' => 'Ubuntu-20.04'
+    'JAVA_HOME' => '/usr/lib/jvm/java-11-openjdk-amd64'
+    'SUDO_COMMAND' => '/usr/sbin/enter-systemd-namespace '
+    'SUDO_USER' => 'felipe'
+    'PWD' => '/mnt/c/xampp/htdocs/projeto_coalize'
+    'LOGNAME' => 'felipe'
+    'XDG_SESSION_TYPE' => 'tty'
+    'MOTD_SHOWN' => 'pam'
+    'HOME' => '/home/felipe'
+    'LANG' => 'C.UTF-8'
+    'WSL_INTEROP' => '/run/WSL/565_interop'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'NVM_DIR' => '/home/felipe/.nvm'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_SESSION_CLASS' => 'user'
+    'TERM' => 'xterm-256color'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'USER' => 'felipe'
+    'SHLVL' => '1'
+    'NVM_CD_FLAGS' => ''
+    'XDG_SESSION_ID' => 'c1'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'WSLENV' => 'WT_SESSION:WT_PROFILE_ID:BASH_ENV/u'
+    'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/var/lib/snapd/desktop'
+    'HUSHLOGIN' => 'FALSE'
+    'PATH' => '/home/felipe/.nvm/versions/node/v16.12.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/mnt/c/xampp/php:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Java/jdk-11.0.15/bin:/mnt/c/xampp/htdocs/apache-maven-3.8.6-bin/apache-maven-3.8.6/bin:/Docker/host/bin:/mnt/c/Users/felly/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/felly/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/felly/AppData/Roaming/npm:/snap/bin:/usr/lib/jvm/java-11-openjdk-amd64/bin'
+    'SUDO_UID' => '1000'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'NVM_BIN' => '/home/felipe/.nvm/versions/node/v16.12.0/bin'
+    'MAIL' => '/var/mail/felipe'
+    'OLDPWD' => '/mnt/c/xampp/htdocs/projeto_coalize/runtime/logs'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1711817072.6372
+    'REQUEST_TIME' => 1711817072
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/create'
+        2 => 'create_produto_table'
+    ]
+    'argc' => 3
+]
+2024-03-30 19:01:57 [-][-][-][error][yii\console\Exception] yii\console\Exception: Unknown option: --login. Options available: --color, --interactive, --help, --silentExitOnException in /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/Controller.php:171
+Stack trace:
+#0 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#1 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#2 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#3 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#4 /mnt/c/xampp/htdocs/projeto_coalize/yii(20): yii\base\Application->run()
+#5 {main}
+2024-03-30 19:01:56 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    '\'WSL_INTEROP' => '/run/WSL/565_interop\''
+    '\'WSL_DISTRO_NAME' => 'Ubuntu-20.04\''
+    '\'WT_SESSION' => '34ae1d33-018f-4b0f-bf61-106fcd1762d3\''
+    '\'WT_PROFILE_ID' => '{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}\''
+    '\'WSLENV' => 'WT_SESSION:WT_PROFILE_ID:BASH_ENV/u\''
+    '\'PWD' => '/home/felipe\''
+    '\'TERM' => 'xterm-256color\''
+    '\'HOSTTYPE' => 'x86_64\''
+    'SHELL' => '/bin/bash'
+    'NVM_INC' => '/home/felipe/.nvm/versions/node/v16.12.0/include/node'
+    'SUDO_GID' => '1000'
+    'WSL_DISTRO_NAME' => 'Ubuntu-20.04'
+    'JAVA_HOME' => '/usr/lib/jvm/java-11-openjdk-amd64'
+    'SUDO_COMMAND' => '/usr/sbin/enter-systemd-namespace '
+    'SUDO_USER' => 'felipe'
+    'PWD' => '/mnt/c/xampp/htdocs/projeto_coalize'
+    'LOGNAME' => 'felipe'
+    'XDG_SESSION_TYPE' => 'tty'
+    'MOTD_SHOWN' => 'pam'
+    'HOME' => '/home/felipe'
+    'LANG' => 'C.UTF-8'
+    'WSL_INTEROP' => '/run/WSL/565_interop'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'NVM_DIR' => '/home/felipe/.nvm'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_SESSION_CLASS' => 'user'
+    'TERM' => 'xterm-256color'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'USER' => 'felipe'
+    'SHLVL' => '1'
+    'NVM_CD_FLAGS' => ''
+    'XDG_SESSION_ID' => 'c1'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'WSLENV' => 'WT_SESSION:WT_PROFILE_ID:BASH_ENV/u'
+    'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/var/lib/snapd/desktop'
+    'HUSHLOGIN' => 'FALSE'
+    'PATH' => '/home/felipe/.nvm/versions/node/v16.12.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/mnt/c/xampp/php:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Java/jdk-11.0.15/bin:/mnt/c/xampp/htdocs/apache-maven-3.8.6-bin/apache-maven-3.8.6/bin:/Docker/host/bin:/mnt/c/Users/felly/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/felly/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/felly/AppData/Roaming/npm:/snap/bin:/usr/lib/jvm/java-11-openjdk-amd64/bin'
+    'SUDO_UID' => '1000'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'NVM_BIN' => '/home/felipe/.nvm/versions/node/v16.12.0/bin'
+    'MAIL' => '/var/mail/felipe'
+    'OLDPWD' => '/mnt/c/xampp/htdocs/projeto_coalize/runtime/logs'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1711825316.0406
+    'REQUEST_TIME' => 1711825316
+    'argv' => [
+        0 => 'yii'
+        1 => 'create-user'
+        2 => '--login=admin'
+        3 => '--senha=senha123'
+        4 => '--nome=Administração'
+    ]
+    'argc' => 5
+]
+2024-03-30 19:03:49 [-][-][-][error][yii\console\Exception] yii\console\Exception: Unknown option: --login. Options available: --color, --interactive, --help, --silentExitOnException in /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/Controller.php:171
+Stack trace:
+#0 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#1 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#2 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#3 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#4 /mnt/c/xampp/htdocs/projeto_coalize/yii(20): yii\base\Application->run()
+#5 {main}
+2024-03-30 19:03:49 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    '\'WSL_INTEROP' => '/run/WSL/565_interop\''
+    '\'WSL_DISTRO_NAME' => 'Ubuntu-20.04\''
+    '\'WT_SESSION' => '34ae1d33-018f-4b0f-bf61-106fcd1762d3\''
+    '\'WT_PROFILE_ID' => '{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}\''
+    '\'WSLENV' => 'WT_SESSION:WT_PROFILE_ID:BASH_ENV/u\''
+    '\'PWD' => '/home/felipe\''
+    '\'TERM' => 'xterm-256color\''
+    '\'HOSTTYPE' => 'x86_64\''
+    'SHELL' => '/bin/bash'
+    'NVM_INC' => '/home/felipe/.nvm/versions/node/v16.12.0/include/node'
+    'SUDO_GID' => '1000'
+    'WSL_DISTRO_NAME' => 'Ubuntu-20.04'
+    'JAVA_HOME' => '/usr/lib/jvm/java-11-openjdk-amd64'
+    'SUDO_COMMAND' => '/usr/sbin/enter-systemd-namespace '
+    'SUDO_USER' => 'felipe'
+    'PWD' => '/mnt/c/xampp/htdocs/projeto_coalize'
+    'LOGNAME' => 'felipe'
+    'XDG_SESSION_TYPE' => 'tty'
+    'MOTD_SHOWN' => 'pam'
+    'HOME' => '/home/felipe'
+    'LANG' => 'C.UTF-8'
+    'WSL_INTEROP' => '/run/WSL/565_interop'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'NVM_DIR' => '/home/felipe/.nvm'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_SESSION_CLASS' => 'user'
+    'TERM' => 'xterm-256color'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'USER' => 'felipe'
+    'SHLVL' => '1'
+    'NVM_CD_FLAGS' => ''
+    'XDG_SESSION_ID' => 'c1'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'WSLENV' => 'WT_SESSION:WT_PROFILE_ID:BASH_ENV/u'
+    'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/var/lib/snapd/desktop'
+    'HUSHLOGIN' => 'FALSE'
+    'PATH' => '/home/felipe/.nvm/versions/node/v16.12.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/mnt/c/xampp/php:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Java/jdk-11.0.15/bin:/mnt/c/xampp/htdocs/apache-maven-3.8.6-bin/apache-maven-3.8.6/bin:/Docker/host/bin:/mnt/c/Users/felly/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/felly/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/felly/AppData/Roaming/npm:/snap/bin:/usr/lib/jvm/java-11-openjdk-amd64/bin'
+    'SUDO_UID' => '1000'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'NVM_BIN' => '/home/felipe/.nvm/versions/node/v16.12.0/bin'
+    'MAIL' => '/var/mail/felipe'
+    'OLDPWD' => '/mnt/c/xampp/htdocs/projeto_coalize/runtime/logs'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1711825428.5375
+    'REQUEST_TIME' => 1711825428
+    'argv' => [
+        0 => 'yii'
+        1 => 'create-user'
+        2 => '--login=admin'
+        3 => '--senha=senha123'
+        4 => '--nome=Administração'
+    ]
+    'argc' => 5
+]
+2024-03-30 19:12:22 [-][-][-][error][ArgumentCountError] ArgumentCountError: Too few arguments to function Firebase\JWT\JWT::encode(), 2 passed in /mnt/c/xampp/htdocs/projeto_coalize/commands/CreateUserCommand.php on line 42 and at least 3 expected in /mnt/c/xampp/htdocs/projeto_coalize/vendor/firebase/php-jwt/src/JWT.php:199
+Stack trace:
+#0 /mnt/c/xampp/htdocs/projeto_coalize/commands/CreateUserCommand.php(42): Firebase\JWT\JWT::encode()
+#1 /mnt/c/xampp/htdocs/projeto_coalize/commands/CreateUserCommand.php(22): app\commands\CreateUserCommand->generateToken()
+#2 [internal function]: app\commands\CreateUserCommand->actionIndex()
+#3 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#4 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#5 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#6 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#7 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#8 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#9 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#10 /mnt/c/xampp/htdocs/projeto_coalize/yii(20): yii\base\Application->run()
+#11 {main}
+2024-03-30 19:12:20 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    '\'WSL_INTEROP' => '/run/WSL/565_interop\''
+    '\'WSL_DISTRO_NAME' => 'Ubuntu-20.04\''
+    '\'WT_SESSION' => '34ae1d33-018f-4b0f-bf61-106fcd1762d3\''
+    '\'WT_PROFILE_ID' => '{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}\''
+    '\'WSLENV' => 'WT_SESSION:WT_PROFILE_ID:BASH_ENV/u\''
+    '\'PWD' => '/home/felipe\''
+    '\'TERM' => 'xterm-256color\''
+    '\'HOSTTYPE' => 'x86_64\''
+    'SHELL' => '/bin/bash'
+    'NVM_INC' => '/home/felipe/.nvm/versions/node/v16.12.0/include/node'
+    'SUDO_GID' => '1000'
+    'WSL_DISTRO_NAME' => 'Ubuntu-20.04'
+    'JAVA_HOME' => '/usr/lib/jvm/java-11-openjdk-amd64'
+    'SUDO_COMMAND' => '/usr/sbin/enter-systemd-namespace '
+    'SUDO_USER' => 'felipe'
+    'PWD' => '/mnt/c/xampp/htdocs/projeto_coalize'
+    'LOGNAME' => 'felipe'
+    'XDG_SESSION_TYPE' => 'tty'
+    'MOTD_SHOWN' => 'pam'
+    'HOME' => '/home/felipe'
+    'LANG' => 'C.UTF-8'
+    'WSL_INTEROP' => '/run/WSL/565_interop'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'NVM_DIR' => '/home/felipe/.nvm'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_SESSION_CLASS' => 'user'
+    'TERM' => 'xterm-256color'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'USER' => 'felipe'
+    'SHLVL' => '1'
+    'NVM_CD_FLAGS' => ''
+    'XDG_SESSION_ID' => 'c1'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'WSLENV' => 'WT_SESSION:WT_PROFILE_ID:BASH_ENV/u'
+    'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/var/lib/snapd/desktop'
+    'HUSHLOGIN' => 'FALSE'
+    'PATH' => '/home/felipe/.nvm/versions/node/v16.12.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/mnt/c/xampp/php:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Java/jdk-11.0.15/bin:/mnt/c/xampp/htdocs/apache-maven-3.8.6-bin/apache-maven-3.8.6/bin:/Docker/host/bin:/mnt/c/Users/felly/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/felly/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/felly/AppData/Roaming/npm:/snap/bin:/usr/lib/jvm/java-11-openjdk-amd64/bin'
+    'SUDO_UID' => '1000'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'NVM_BIN' => '/home/felipe/.nvm/versions/node/v16.12.0/bin'
+    'MAIL' => '/var/mail/felipe'
+    'OLDPWD' => '/mnt/c/xampp/htdocs/projeto_coalize/runtime/logs'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1711825939.6411
+    'REQUEST_TIME' => 1711825939
+    'argv' => [
+        0 => 'yii'
+        1 => 'create-user'
+        2 => 'admin'
+        3 => 'senha123'
+        4 => 'Administração'
+    ]
+    'argc' => 5
+]
+2024-03-30 19:13:36 [-][-][-][error][ArgumentCountError] ArgumentCountError: Too few arguments to function Firebase\JWT\JWT::encode(), 2 passed in /mnt/c/xampp/htdocs/projeto_coalize/commands/CreateUserCommand.php on line 43 and at least 3 expected in /mnt/c/xampp/htdocs/projeto_coalize/vendor/firebase/php-jwt/src/JWT.php:199
+Stack trace:
+#0 /mnt/c/xampp/htdocs/projeto_coalize/commands/CreateUserCommand.php(43): Firebase\JWT\JWT::encode()
+#1 /mnt/c/xampp/htdocs/projeto_coalize/commands/CreateUserCommand.php(23): app\commands\CreateUserCommand->generateToken()
+#2 [internal function]: app\commands\CreateUserCommand->actionIndex()
+#3 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#4 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#5 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#6 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#7 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#8 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#9 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#10 /mnt/c/xampp/htdocs/projeto_coalize/yii(20): yii\base\Application->run()
+#11 {main}
+2024-03-30 19:13:34 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    '\'WSL_INTEROP' => '/run/WSL/565_interop\''
+    '\'WSL_DISTRO_NAME' => 'Ubuntu-20.04\''
+    '\'WT_SESSION' => '34ae1d33-018f-4b0f-bf61-106fcd1762d3\''
+    '\'WT_PROFILE_ID' => '{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}\''
+    '\'WSLENV' => 'WT_SESSION:WT_PROFILE_ID:BASH_ENV/u\''
+    '\'PWD' => '/home/felipe\''
+    '\'TERM' => 'xterm-256color\''
+    '\'HOSTTYPE' => 'x86_64\''
+    'SHELL' => '/bin/bash'
+    'NVM_INC' => '/home/felipe/.nvm/versions/node/v16.12.0/include/node'
+    'SUDO_GID' => '1000'
+    'WSL_DISTRO_NAME' => 'Ubuntu-20.04'
+    'JAVA_HOME' => '/usr/lib/jvm/java-11-openjdk-amd64'
+    'SUDO_COMMAND' => '/usr/sbin/enter-systemd-namespace '
+    'SUDO_USER' => 'felipe'
+    'PWD' => '/mnt/c/xampp/htdocs/projeto_coalize'
+    'LOGNAME' => 'felipe'
+    'XDG_SESSION_TYPE' => 'tty'
+    'MOTD_SHOWN' => 'pam'
+    'HOME' => '/home/felipe'
+    'LANG' => 'C.UTF-8'
+    'WSL_INTEROP' => '/run/WSL/565_interop'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'NVM_DIR' => '/home/felipe/.nvm'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_SESSION_CLASS' => 'user'
+    'TERM' => 'xterm-256color'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'USER' => 'felipe'
+    'SHLVL' => '1'
+    'NVM_CD_FLAGS' => ''
+    'XDG_SESSION_ID' => 'c1'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'WSLENV' => 'WT_SESSION:WT_PROFILE_ID:BASH_ENV/u'
+    'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/var/lib/snapd/desktop'
+    'HUSHLOGIN' => 'FALSE'
+    'PATH' => '/home/felipe/.nvm/versions/node/v16.12.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/mnt/c/xampp/php:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Java/jdk-11.0.15/bin:/mnt/c/xampp/htdocs/apache-maven-3.8.6-bin/apache-maven-3.8.6/bin:/Docker/host/bin:/mnt/c/Users/felly/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/felly/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/felly/AppData/Roaming/npm:/snap/bin:/usr/lib/jvm/java-11-openjdk-amd64/bin'
+    'SUDO_UID' => '1000'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'NVM_BIN' => '/home/felipe/.nvm/versions/node/v16.12.0/bin'
+    'MAIL' => '/var/mail/felipe'
+    'OLDPWD' => '/mnt/c/xampp/htdocs/projeto_coalize/runtime/logs'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1711826014.2801
+    'REQUEST_TIME' => 1711826014
+    'argv' => [
+        0 => 'yii'
+        1 => 'create-user'
+        2 => 'admin'
+        3 => 'senha123'
+        4 => 'Administração'
+    ]
+    'argc' => 5
+]
+2024-03-30 19:14:44 [-][-][-][error][ArgumentCountError] ArgumentCountError: Too few arguments to function Firebase\JWT\JWT::encode(), 2 passed in /mnt/c/xampp/htdocs/projeto_coalize/commands/CreateUserCommand.php on line 44 and at least 3 expected in /mnt/c/xampp/htdocs/projeto_coalize/vendor/firebase/php-jwt/src/JWT.php:199
+Stack trace:
+#0 /mnt/c/xampp/htdocs/projeto_coalize/commands/CreateUserCommand.php(44): Firebase\JWT\JWT::encode()
+#1 /mnt/c/xampp/htdocs/projeto_coalize/commands/CreateUserCommand.php(24): app\commands\CreateUserCommand->generateToken()
+#2 [internal function]: app\commands\CreateUserCommand->actionIndex()
+#3 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#4 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#5 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#6 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#7 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#8 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#9 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#10 /mnt/c/xampp/htdocs/projeto_coalize/yii(20): yii\base\Application->run()
+#11 {main}
+2024-03-30 19:14:43 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    '\'WSL_INTEROP' => '/run/WSL/565_interop\''
+    '\'WSL_DISTRO_NAME' => 'Ubuntu-20.04\''
+    '\'WT_SESSION' => '34ae1d33-018f-4b0f-bf61-106fcd1762d3\''
+    '\'WT_PROFILE_ID' => '{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}\''
+    '\'WSLENV' => 'WT_SESSION:WT_PROFILE_ID:BASH_ENV/u\''
+    '\'PWD' => '/home/felipe\''
+    '\'TERM' => 'xterm-256color\''
+    '\'HOSTTYPE' => 'x86_64\''
+    'SHELL' => '/bin/bash'
+    'NVM_INC' => '/home/felipe/.nvm/versions/node/v16.12.0/include/node'
+    'SUDO_GID' => '1000'
+    'WSL_DISTRO_NAME' => 'Ubuntu-20.04'
+    'JAVA_HOME' => '/usr/lib/jvm/java-11-openjdk-amd64'
+    'SUDO_COMMAND' => '/usr/sbin/enter-systemd-namespace '
+    'SUDO_USER' => 'felipe'
+    'PWD' => '/mnt/c/xampp/htdocs/projeto_coalize'
+    'LOGNAME' => 'felipe'
+    'XDG_SESSION_TYPE' => 'tty'
+    'MOTD_SHOWN' => 'pam'
+    'HOME' => '/home/felipe'
+    'LANG' => 'C.UTF-8'
+    'WSL_INTEROP' => '/run/WSL/565_interop'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'NVM_DIR' => '/home/felipe/.nvm'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_SESSION_CLASS' => 'user'
+    'TERM' => 'xterm-256color'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'USER' => 'felipe'
+    'SHLVL' => '1'
+    'NVM_CD_FLAGS' => ''
+    'XDG_SESSION_ID' => 'c1'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'WSLENV' => 'WT_SESSION:WT_PROFILE_ID:BASH_ENV/u'
+    'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/var/lib/snapd/desktop'
+    'HUSHLOGIN' => 'FALSE'
+    'PATH' => '/home/felipe/.nvm/versions/node/v16.12.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/mnt/c/xampp/php:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Java/jdk-11.0.15/bin:/mnt/c/xampp/htdocs/apache-maven-3.8.6-bin/apache-maven-3.8.6/bin:/Docker/host/bin:/mnt/c/Users/felly/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/felly/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/felly/AppData/Roaming/npm:/snap/bin:/usr/lib/jvm/java-11-openjdk-amd64/bin'
+    'SUDO_UID' => '1000'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'NVM_BIN' => '/home/felipe/.nvm/versions/node/v16.12.0/bin'
+    'MAIL' => '/var/mail/felipe'
+    'OLDPWD' => '/mnt/c/xampp/htdocs/projeto_coalize/runtime/logs'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1711826082.9975
+    'REQUEST_TIME' => 1711826082
+    'argv' => [
+        0 => 'yii'
+        1 => 'create-user'
+        2 => 'admin'
+        3 => 'senha123'
+        4 => 'Administração'
+    ]
+    'argc' => 5
+]
+2024-03-30 19:17:33 [-][-][-][error][ArgumentCountError] ArgumentCountError: Too few arguments to function Firebase\JWT\JWT::encode(), 2 passed in /mnt/c/xampp/htdocs/projeto_coalize/commands/CreateUserCommand.php on line 43 and at least 3 expected in /mnt/c/xampp/htdocs/projeto_coalize/vendor/firebase/php-jwt/src/JWT.php:199
+Stack trace:
+#0 /mnt/c/xampp/htdocs/projeto_coalize/commands/CreateUserCommand.php(43): Firebase\JWT\JWT::encode()
+#1 /mnt/c/xampp/htdocs/projeto_coalize/commands/CreateUserCommand.php(23): app\commands\CreateUserCommand->generateToken()
+#2 [internal function]: app\commands\CreateUserCommand->actionIndex()
+#3 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#4 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#5 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#6 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#7 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#8 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#9 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#10 /mnt/c/xampp/htdocs/projeto_coalize/yii(20): yii\base\Application->run()
+#11 {main}
+2024-03-30 19:17:31 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    '\'WSL_INTEROP' => '/run/WSL/565_interop\''
+    '\'WSL_DISTRO_NAME' => 'Ubuntu-20.04\''
+    '\'WT_SESSION' => '34ae1d33-018f-4b0f-bf61-106fcd1762d3\''
+    '\'WT_PROFILE_ID' => '{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}\''
+    '\'WSLENV' => 'WT_SESSION:WT_PROFILE_ID:BASH_ENV/u\''
+    '\'PWD' => '/home/felipe\''
+    '\'TERM' => 'xterm-256color\''
+    '\'HOSTTYPE' => 'x86_64\''
+    'SHELL' => '/bin/bash'
+    'NVM_INC' => '/home/felipe/.nvm/versions/node/v16.12.0/include/node'
+    'SUDO_GID' => '1000'
+    'WSL_DISTRO_NAME' => 'Ubuntu-20.04'
+    'JAVA_HOME' => '/usr/lib/jvm/java-11-openjdk-amd64'
+    'SUDO_COMMAND' => '/usr/sbin/enter-systemd-namespace '
+    'SUDO_USER' => 'felipe'
+    'PWD' => '/mnt/c/xampp/htdocs/projeto_coalize'
+    'LOGNAME' => 'felipe'
+    'XDG_SESSION_TYPE' => 'tty'
+    'MOTD_SHOWN' => 'pam'
+    'HOME' => '/home/felipe'
+    'LANG' => 'C.UTF-8'
+    'WSL_INTEROP' => '/run/WSL/565_interop'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'NVM_DIR' => '/home/felipe/.nvm'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_SESSION_CLASS' => 'user'
+    'TERM' => 'xterm-256color'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'USER' => 'felipe'
+    'SHLVL' => '1'
+    'NVM_CD_FLAGS' => ''
+    'XDG_SESSION_ID' => 'c1'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'WSLENV' => 'WT_SESSION:WT_PROFILE_ID:BASH_ENV/u'
+    'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/var/lib/snapd/desktop'
+    'HUSHLOGIN' => 'FALSE'
+    'PATH' => '/home/felipe/.nvm/versions/node/v16.12.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/mnt/c/xampp/php:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Java/jdk-11.0.15/bin:/mnt/c/xampp/htdocs/apache-maven-3.8.6-bin/apache-maven-3.8.6/bin:/Docker/host/bin:/mnt/c/Users/felly/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/felly/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/felly/AppData/Roaming/npm:/snap/bin:/usr/lib/jvm/java-11-openjdk-amd64/bin'
+    'SUDO_UID' => '1000'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'NVM_BIN' => '/home/felipe/.nvm/versions/node/v16.12.0/bin'
+    'MAIL' => '/var/mail/felipe'
+    'OLDPWD' => '/mnt/c/xampp/htdocs/projeto_coalize/runtime/logs'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1711826250.8543
+    'REQUEST_TIME' => 1711826250
+    'argv' => [
+        0 => 'yii'
+        1 => 'create-user'
+        2 => 'admin'
+        3 => 'senha123'
+        4 => 'Administração'
+    ]
+    'argc' => 5
+]
+2024-03-30 19:18:54 [-][-][-][error][TypeError] TypeError: Firebase\JWT\JWT::encode(): Argument #4 ($keyId) must be of type ?string, array given, called in /mnt/c/xampp/htdocs/projeto_coalize/commands/CreateUserCommand.php on line 43 and defined in /mnt/c/xampp/htdocs/projeto_coalize/vendor/firebase/php-jwt/src/JWT.php:199
+Stack trace:
+#0 /mnt/c/xampp/htdocs/projeto_coalize/commands/CreateUserCommand.php(43): Firebase\JWT\JWT::encode()
+#1 /mnt/c/xampp/htdocs/projeto_coalize/commands/CreateUserCommand.php(22): app\commands\CreateUserCommand->generateToken()
+#2 [internal function]: app\commands\CreateUserCommand->actionIndex()
+#3 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#4 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#5 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#6 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#7 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#8 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#9 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#10 /mnt/c/xampp/htdocs/projeto_coalize/yii(20): yii\base\Application->run()
+#11 {main}
+2024-03-30 19:18:52 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    '\'WSL_INTEROP' => '/run/WSL/565_interop\''
+    '\'WSL_DISTRO_NAME' => 'Ubuntu-20.04\''
+    '\'WT_SESSION' => '34ae1d33-018f-4b0f-bf61-106fcd1762d3\''
+    '\'WT_PROFILE_ID' => '{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}\''
+    '\'WSLENV' => 'WT_SESSION:WT_PROFILE_ID:BASH_ENV/u\''
+    '\'PWD' => '/home/felipe\''
+    '\'TERM' => 'xterm-256color\''
+    '\'HOSTTYPE' => 'x86_64\''
+    'SHELL' => '/bin/bash'
+    'NVM_INC' => '/home/felipe/.nvm/versions/node/v16.12.0/include/node'
+    'SUDO_GID' => '1000'
+    'WSL_DISTRO_NAME' => 'Ubuntu-20.04'
+    'JAVA_HOME' => '/usr/lib/jvm/java-11-openjdk-amd64'
+    'SUDO_COMMAND' => '/usr/sbin/enter-systemd-namespace '
+    'SUDO_USER' => 'felipe'
+    'PWD' => '/mnt/c/xampp/htdocs/projeto_coalize'
+    'LOGNAME' => 'felipe'
+    'XDG_SESSION_TYPE' => 'tty'
+    'MOTD_SHOWN' => 'pam'
+    'HOME' => '/home/felipe'
+    'LANG' => 'C.UTF-8'
+    'WSL_INTEROP' => '/run/WSL/565_interop'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'NVM_DIR' => '/home/felipe/.nvm'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_SESSION_CLASS' => 'user'
+    'TERM' => 'xterm-256color'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'USER' => 'felipe'
+    'SHLVL' => '1'
+    'NVM_CD_FLAGS' => ''
+    'XDG_SESSION_ID' => 'c1'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'WSLENV' => 'WT_SESSION:WT_PROFILE_ID:BASH_ENV/u'
+    'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/var/lib/snapd/desktop'
+    'HUSHLOGIN' => 'FALSE'
+    'PATH' => '/home/felipe/.nvm/versions/node/v16.12.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/mnt/c/xampp/php:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Java/jdk-11.0.15/bin:/mnt/c/xampp/htdocs/apache-maven-3.8.6-bin/apache-maven-3.8.6/bin:/Docker/host/bin:/mnt/c/Users/felly/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/felly/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/felly/AppData/Roaming/npm:/snap/bin:/usr/lib/jvm/java-11-openjdk-amd64/bin'
+    'SUDO_UID' => '1000'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'NVM_BIN' => '/home/felipe/.nvm/versions/node/v16.12.0/bin'
+    'MAIL' => '/var/mail/felipe'
+    'OLDPWD' => '/mnt/c/xampp/htdocs/projeto_coalize/runtime/logs'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1711826331.6205
+    'REQUEST_TIME' => 1711826331
+    'argv' => [
+        0 => 'yii'
+        1 => 'create-user'
+        2 => 'admin'
+        3 => 'senha123'
+        4 => 'Administração'
+    ]
+    'argc' => 5
+]
+2024-03-30 22:17:35 [-][-][-][error][yii\db\IntegrityException] PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin' for key 'user.login' in /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/Command.php:1320
+Stack trace:
+#0 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/Command.php(1320): PDOStatement->execute()
+#1 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/Command.php(1120): yii\db\Command->internalExecute()
+#2 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/Schema.php(431): yii\db\Command->execute()
+#3 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/ActiveRecord.php(604): yii\db\Schema->insert()
+#4 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/ActiveRecord.php(570): yii\db\ActiveRecord->insertInternal()
+#5 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/BaseActiveRecord.php(687): yii\db\ActiveRecord->insert()
+#6 /mnt/c/xampp/htdocs/projeto_coalize/commands/CreateUserCommand.php(18): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\commands\CreateUserCommand->actionIndex()
+#8 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#9 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#10 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#11 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#12 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#13 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#14 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#15 /mnt/c/xampp/htdocs/projeto_coalize/yii(20): yii\base\Application->run()
+#16 {main}
+
+Next yii\db\IntegrityException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin' for key 'user.login'
+The SQL being executed was: INSERT INTO `user` (`login`, `senha`, `nome`) VALUES ('admin', '$2y$13$24bOxKJVuwQcMeboFeqWuedNkR.NxfzclOX/vQ1iNmGabTMiAy/Qi', 'Administração') in /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/Schema.php:676
+Stack trace:
+#0 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/Command.php(1325): yii\db\Schema->convertException()
+#1 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/Command.php(1120): yii\db\Command->internalExecute()
+#2 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/Schema.php(431): yii\db\Command->execute()
+#3 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/ActiveRecord.php(604): yii\db\Schema->insert()
+#4 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/ActiveRecord.php(570): yii\db\ActiveRecord->insertInternal()
+#5 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/BaseActiveRecord.php(687): yii\db\ActiveRecord->insert()
+#6 /mnt/c/xampp/htdocs/projeto_coalize/commands/CreateUserCommand.php(18): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\commands\CreateUserCommand->actionIndex()
+#8 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#9 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#10 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#11 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#12 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#13 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#14 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#15 /mnt/c/xampp/htdocs/projeto_coalize/yii(20): yii\base\Application->run()
+#16 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1062
+    [2] => Duplicate entry 'admin' for key 'user.login'
+)
+
+2024-03-30 22:17:33 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    '\'WSL_INTEROP' => '/run/WSL/565_interop\''
+    '\'WSL_DISTRO_NAME' => 'Ubuntu-20.04\''
+    '\'WT_SESSION' => '34ae1d33-018f-4b0f-bf61-106fcd1762d3\''
+    '\'WT_PROFILE_ID' => '{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}\''
+    '\'WSLENV' => 'WT_SESSION:WT_PROFILE_ID:BASH_ENV/u\''
+    '\'PWD' => '/home/felipe\''
+    '\'TERM' => 'xterm-256color\''
+    '\'HOSTTYPE' => 'x86_64\''
+    'SHELL' => '/bin/bash'
+    'NVM_INC' => '/home/felipe/.nvm/versions/node/v16.12.0/include/node'
+    'SUDO_GID' => '1000'
+    'WSL_DISTRO_NAME' => 'Ubuntu-20.04'
+    'JAVA_HOME' => '/usr/lib/jvm/java-11-openjdk-amd64'
+    'SUDO_COMMAND' => '/usr/sbin/enter-systemd-namespace '
+    'SUDO_USER' => 'felipe'
+    'PWD' => '/mnt/c/xampp/htdocs/projeto_coalize'
+    'LOGNAME' => 'felipe'
+    'XDG_SESSION_TYPE' => 'tty'
+    'MOTD_SHOWN' => 'pam'
+    'HOME' => '/home/felipe'
+    'LANG' => 'C.UTF-8'
+    'WSL_INTEROP' => '/run/WSL/565_interop'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'NVM_DIR' => '/home/felipe/.nvm'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_SESSION_CLASS' => 'user'
+    'TERM' => 'xterm-256color'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'USER' => 'felipe'
+    'SHLVL' => '1'
+    'NVM_CD_FLAGS' => ''
+    'XDG_SESSION_ID' => 'c1'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'WSLENV' => 'WT_SESSION:WT_PROFILE_ID:BASH_ENV/u'
+    'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/var/lib/snapd/desktop'
+    'HUSHLOGIN' => 'FALSE'
+    'PATH' => '/home/felipe/.nvm/versions/node/v16.12.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/mnt/c/xampp/php:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Java/jdk-11.0.15/bin:/mnt/c/xampp/htdocs/apache-maven-3.8.6-bin/apache-maven-3.8.6/bin:/Docker/host/bin:/mnt/c/Users/felly/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/felly/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/felly/AppData/Roaming/npm:/snap/bin:/usr/lib/jvm/java-11-openjdk-amd64/bin'
+    'SUDO_UID' => '1000'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'NVM_BIN' => '/home/felipe/.nvm/versions/node/v16.12.0/bin'
+    'MAIL' => '/var/mail/felipe'
+    'OLDPWD' => '/mnt/c/xampp/htdocs/projeto_coalize/runtime/logs'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1711837053.0778
+    'REQUEST_TIME' => 1711837053
+    'argv' => [
+        0 => 'yii'
+        1 => 'create-user'
+        2 => 'admin'
+        3 => 'senha123'
+        4 => 'Administração'
+    ]
+    'argc' => 5
+]
+2024-03-30 22:18:50 [-][-][-][error][yii\db\IntegrityException] PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin' for key 'user.login' in /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/Command.php:1320
+Stack trace:
+#0 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/Command.php(1320): PDOStatement->execute()
+#1 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/Command.php(1120): yii\db\Command->internalExecute()
+#2 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/Schema.php(431): yii\db\Command->execute()
+#3 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/ActiveRecord.php(604): yii\db\Schema->insert()
+#4 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/ActiveRecord.php(570): yii\db\ActiveRecord->insertInternal()
+#5 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/BaseActiveRecord.php(687): yii\db\ActiveRecord->insert()
+#6 /mnt/c/xampp/htdocs/projeto_coalize/commands/CreateUserCommand.php(18): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\commands\CreateUserCommand->actionIndex()
+#8 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#9 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#10 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#11 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#12 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#13 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#14 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#15 /mnt/c/xampp/htdocs/projeto_coalize/yii(20): yii\base\Application->run()
+#16 {main}
+
+Next yii\db\IntegrityException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin' for key 'user.login'
+The SQL being executed was: INSERT INTO `user` (`login`, `senha`, `nome`) VALUES ('admin', '$2y$13$ZgcDdYzy1RcVbN2/auaFOO1V6mWUdA6vxgXEpX8H/q2w6c8Mfa3Ca', 'Administração') in /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/Schema.php:676
+Stack trace:
+#0 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/Command.php(1325): yii\db\Schema->convertException()
+#1 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/Command.php(1120): yii\db\Command->internalExecute()
+#2 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/Schema.php(431): yii\db\Command->execute()
+#3 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/ActiveRecord.php(604): yii\db\Schema->insert()
+#4 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/ActiveRecord.php(570): yii\db\ActiveRecord->insertInternal()
+#5 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/db/BaseActiveRecord.php(687): yii\db\ActiveRecord->insert()
+#6 /mnt/c/xampp/htdocs/projeto_coalize/commands/CreateUserCommand.php(18): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\commands\CreateUserCommand->actionIndex()
+#8 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#9 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#10 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#11 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#12 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#13 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#14 /mnt/c/xampp/htdocs/projeto_coalize/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#15 /mnt/c/xampp/htdocs/projeto_coalize/yii(20): yii\base\Application->run()
+#16 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1062
+    [2] => Duplicate entry 'admin' for key 'user.login'
+)
+
+2024-03-30 22:18:47 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    '\'WSL_INTEROP' => '/run/WSL/565_interop\''
+    '\'WSL_DISTRO_NAME' => 'Ubuntu-20.04\''
+    '\'WT_SESSION' => '34ae1d33-018f-4b0f-bf61-106fcd1762d3\''
+    '\'WT_PROFILE_ID' => '{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}\''
+    '\'WSLENV' => 'WT_SESSION:WT_PROFILE_ID:BASH_ENV/u\''
+    '\'PWD' => '/home/felipe\''
+    '\'TERM' => 'xterm-256color\''
+    '\'HOSTTYPE' => 'x86_64\''
+    'SHELL' => '/bin/bash'
+    'NVM_INC' => '/home/felipe/.nvm/versions/node/v16.12.0/include/node'
+    'SUDO_GID' => '1000'
+    'WSL_DISTRO_NAME' => 'Ubuntu-20.04'
+    'JAVA_HOME' => '/usr/lib/jvm/java-11-openjdk-amd64'
+    'SUDO_COMMAND' => '/usr/sbin/enter-systemd-namespace '
+    'SUDO_USER' => 'felipe'
+    'PWD' => '/mnt/c/xampp/htdocs/projeto_coalize'
+    'LOGNAME' => 'felipe'
+    'XDG_SESSION_TYPE' => 'tty'
+    'MOTD_SHOWN' => 'pam'
+    'HOME' => '/home/felipe'
+    'LANG' => 'C.UTF-8'
+    'WSL_INTEROP' => '/run/WSL/565_interop'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'NVM_DIR' => '/home/felipe/.nvm'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_SESSION_CLASS' => 'user'
+    'TERM' => 'xterm-256color'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'USER' => 'felipe'
+    'SHLVL' => '1'
+    'NVM_CD_FLAGS' => ''
+    'XDG_SESSION_ID' => 'c1'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'WSLENV' => 'WT_SESSION:WT_PROFILE_ID:BASH_ENV/u'
+    'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/var/lib/snapd/desktop'
+    'HUSHLOGIN' => 'FALSE'
+    'PATH' => '/home/felipe/.nvm/versions/node/v16.12.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/mnt/c/xampp/php:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Java/jdk-11.0.15/bin:/mnt/c/xampp/htdocs/apache-maven-3.8.6-bin/apache-maven-3.8.6/bin:/Docker/host/bin:/mnt/c/Users/felly/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/felly/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/felly/AppData/Roaming/npm:/snap/bin:/usr/lib/jvm/java-11-openjdk-amd64/bin'
+    'SUDO_UID' => '1000'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'NVM_BIN' => '/home/felipe/.nvm/versions/node/v16.12.0/bin'
+    'MAIL' => '/var/mail/felipe'
+    'OLDPWD' => '/mnt/c/xampp/htdocs/projeto_coalize/runtime/logs'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1711837127.5403
+    'REQUEST_TIME' => 1711837127
+    'argv' => [
+        0 => 'yii'
+        1 => 'create-user'
+        2 => 'admin'
+        3 => 'senha123'
+        4 => 'Administração'
+    ]
+    'argc' => 5
+]
+2024-03-30 21:02:42 [-][-][-][error][Error] Error: Class "app\services\DateTime" not found in /application/services/AuthService.php:16
+Stack trace:
+#0 /application/commands/CreateUserCommand.php(31): app\services\AuthService::generateToken()
+#1 [internal function]: app\commands\CreateUserCommand->actionIndex()
+#2 /application/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#3 /application/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#4 /application/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#5 /application/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#6 /application/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#7 /application/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#8 /application/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#9 /application/yii(20): yii\base\Application->run()
+#10 {main}
+2024-03-30 21:02:40 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HOSTNAME' => 'a32b4a6c5d61'
+    'PWD' => '/application'
+    'HOME' => '/root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'TERM' => 'linux'
+    'SHLVL' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'DEBIAN_FRONTEND' => 'noninteractive'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1711843360.4553
+    'REQUEST_TIME' => 1711843360
+    'argv' => [
+        0 => 'yii'
+        1 => 'create-user'
+        2 => 'admin'
+        3 => 'senha123'
+        4 => 'Administração'
+    ]
+    'argc' => 5
+]
+2024-03-30 21:03:11 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined variable $issuedAt in /application/services/AuthService.php:22
+Stack trace:
+#0 /application/services/AuthService.php(22): yii\base\ErrorHandler->handleError()
+#1 /application/commands/CreateUserCommand.php(31): app\services\AuthService::generateToken()
+#2 [internal function]: app\commands\CreateUserCommand->actionIndex()
+#3 /application/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#4 /application/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#5 /application/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#6 /application/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#7 /application/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#8 /application/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#9 /application/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#10 /application/yii(20): yii\base\Application->run()
+#11 {main}
+2024-03-30 21:03:10 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HOSTNAME' => 'a32b4a6c5d61'
+    'PWD' => '/application'
+    'HOME' => '/root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'TERM' => 'linux'
+    'SHLVL' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'DEBIAN_FRONTEND' => 'noninteractive'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1711843389.5924
+    'REQUEST_TIME' => 1711843389
+    'argv' => [
+        0 => 'yii'
+        1 => 'create-user'
+        2 => 'admin'
+        3 => 'senha123'
+        4 => 'Administração'
+    ]
+    'argc' => 5
+]
